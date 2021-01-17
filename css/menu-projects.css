@@ -1,0 +1,126 @@
+.menu-projects {
+    z-index: 2;
+    display: none;
+    transition: all 0.2s ease;
+    position: relative;
+    left: 0%;
+    height: 100vh;
+    width: 50vw;
+    overflow-x: hidden;
+    list-style:none;
+  }
+
+  .menu-projects a {
+    /* color: var(--color2); */
+    text-decoration: none
+  }
+  
+  #titulo-menuprojects {
+    position: relative;
+  }
+  
+  #titulo-menuprojects span {
+    display: none;
+  }
+  
+  .menu-projects-container {
+    width: 100%;
+    margin: 2rem 1rem;
+  }
+  
+  
+  .menu-projects a {
+    text-transform: uppercase;
+    margin: 0px 10px;
+    transition: 0.2s ease;
+  }
+  
+  
+  .menu-projects li {
+    cursor: pointer;
+    font-size: 22px;
+    border-bottom: solid 1px;
+    width: auto;
+    padding-bottom: 8px;
+    margin: -10px 0px;
+    transition: 0.3s ease;
+    
+  }
+  
+
+  .li-invisible {
+      display: none!important;
+  }
+  
+
+  .menu-projects li:hover  {
+    animation: rainbow 0.2s infinite;
+    transform: translateX(4%)!important;
+  }
+  
+
+  .menu-projects-visible {
+      display: block;
+      transform: translateX(100%);
+  }
+  
+  
+  
+  
+  @media (max-width: 500px) {
+  
+    #titulo-menuprojects {
+      position: fixed;
+      /* bottom: 0px; */
+      width: 100%;
+      transform: translate(0px, 0px);
+      transition: 0.5s ease; 	
+      top: 0px;
+      left: 0px;
+      background-color: var(--color);
+      border-bottom: solid 2px var(--color2);
+      display: block;
+      z-index: 99;
+  }
+
+  
+    #titulo-menuprojects span {
+      display: inline;
+    }
+  
+    
+  .menu-projects-container::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  .menu-projects-container::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    outline: 0px solid slategrey;
+    height: -50px;
+  }
+  
+  .menu-projects li:hover  {
+    transform: translateX(0%)!important;
+  }
+  
+  
+    .menu-projects {
+      width: 100vw;
+      margin-left: 0px;
+      top: -50px;
+    }
+  
+    .menu-projects-container {
+      margin: 6rem 15px;
+      background-color: var(--color);
+    }
+    
+    .menu-projects li {
+          margin: 0px;
+      text-align: center;
+    }
+    
+    .menu-projects li:hover {
+          font-style: normal;
+  }
+  }

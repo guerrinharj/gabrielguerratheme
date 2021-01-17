@@ -1,0 +1,110 @@
+.projetos-overlay {
+    width: 50vw;
+    left: 50%;
+  }
+  
+  .artista {
+    font-size: 60px;
+    font-weight: 800;
+    border: none;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    text-align: center;
+  }
+
+  .artista p {
+    margin-block-start: 2rem;
+  }
+  
+  .releases {
+    margin-top: 20px;
+  }
+  
+  .releases img {
+    width: 70%!important;
+    margin: 20px 0px 40px;
+    display: block;
+    padding:  0.5rem;
+  }
+  
+  .release-cover {
+    transition: 0.5s ease;
+    cursor: pointer;
+    position: relative
+  }
+  
+  
+  
+  .titulo {
+    margin: 15px 0px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    opacity: 0.3;
+    cursor: pointer;
+  }
+  
+  .discos {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    margin: 10px auto;
+  }
+  
+  .discos img {
+    margin: auto;
+  }
+  
+  
+  .discos .ano-release {
+    display: inline;
+    font-size: 1.3rem;
+  }
+  
+  
+  @media (max-width: 500px) {
+    .artista {
+      font-size: 19px;
+          position: fixed;
+      /* bottom: 0px; */
+      width: 100%;
+      transform: translate(0px, 0px);
+      transition: 0.5s ease; 	
+      top: 0px;
+      left: 0px;
+      background-color: var(--color);
+      border-bottom: solid 2px var(--color2) ;
+      z-index: 100;
+      text-align: center;
+      word-break: break-word;
+     
+    }
+  
+    .artista p {
+      width: 50vw;
+      margin: auto;
+    }
+  
+    .projetos-overlay {
+      width: 100vw;
+      left: 0%;
+    }
+  
+    .releases img {
+      padding: 0px;
+    }
+    
+    .cover-selected {
+    opacity: 1;
+  }
+    
+  }
+  
+  
+  @media (min-height: 1000px) {
+    .releases img {
+      width: auto;
+      height: auto;
+  }
+  }
+  

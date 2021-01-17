@@ -1,0 +1,282 @@
+.titulo-release {
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-bottom: solid 1px var(--color);
+    width: 100%;
+    padding-bottom: 1px;
+  }
+  
+   .link_to_bandcamp {
+    text-decoration: none;
+    color: var(--color2); 
+    margin: auto
+    
+  }
+  
+  .titulo-release:hover {
+    animation: rainbow 0.5s infinite;
+    border: none;
+  }
+  
+  .cover-invisible {
+    display: none;
+  }
+  
+  .info-tracklist {
+    opacity: 0;
+    font-size: 12px;
+    transition: all 0.3s ease;
+    line-height: 1;
+    text-transform: none;
+    position: fixed;
+    left: 0;
+    top: 10vh;
+    width: 100%;
+    background-color: transparent;
+    /* display: none; */
+    text-align:center;
+    position: relative
+  }
+
+  .release-cover:hover .info-tracklist {
+    opacity: 0.8;
+  }
+  
+  /* .infocontainer {
+    margin-top: 4.5rem;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 100vh;
+    z-index: 1;
+  } */
+  
+  .info-tracklist::-webkit-scrollbar {
+    width: 1px;
+  }
+  
+  .info-tracklist::-webkit-scrollbar-thumb {
+    background-color: var(--color2);
+    outline: 1px solid slategrey;
+    height: -50px;
+  }
+  
+  .release-visible {
+    opacity: 1;
+    font-size: 1rem;
+    position: fixed;
+    /*height: auto;*/
+    z-index: 5;
+    height: 90vh;
+    overflow: auto;
+    display: block;
+    transition: 0.5s ease;
+    transform: translateY(-2%);
+    top: 0;
+  }
+  
+  .discos li {
+    text-transform: uppercase;
+    transition: 0.2s ease;
+    margin: 10px 0px;
+    line-height: 1.5;
+    cursor: initial;
+  }
+  
+  .info-tracklist li {
+    width: 90%;
+    text-transform: uppercase;
+    display: inline;
+    font-size: 1rem;
+    text-align:center;
+  }
+
+  .infocontainer::-webkit-scrollbar {
+    width: 1px;
+  }
+  
+  .infocontainer::-webkit-scrollbar-thumb {
+    background-color: var(--color);
+    outline: 1px solid slategrey;
+    height: -50px;
+  }
+  
+  .tracklisting {
+  width: 100%;
+  }
+  
+  .tracklisting-album {
+      display: flex;
+         flex-wrap: wrap;
+      width: 100%;  
+        font-size: 16px;
+   }
+  
+  .tracklisting li {
+      display: block;
+      width: 100%;  	
+   }
+  
+  .info-tracklist iframe {
+  display: block;
+  }
+  
+  .infocontainer:hover .descricao-release {
+    display: block;
+  }
+  
+  .descricao-release {
+    margin: 8px 0px;
+    display: none;
+  }
+
+  .attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
+    height: auto!important;
+  }
+
+  .post-categories a {
+    text-decoration: none;
+    color: var(--color2)
+  }
+
+.embed-container {
+  position: fixed;
+  width: 100vw;
+  height: 10vh;
+  bottom: 2rem;
+  left: 0;
+  z-index:3000;
+}
+
+.embed-area {
+  position: absolute;
+  transform: translateX(100%);
+  transition: 0.8s ease;
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:flex-end
+}
+
+  
+  .embed-visible {
+  transition: 0.8s ease;
+  transform: translateX(0%)!important;
+  }
+  
+  .embed-area iframe {
+    width: 100%!important
+  }
+
+  .no-embed {
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+
+  .no-embed:hover {
+    transition: all 0.3s ease;
+    transform: translateX(-40%);
+  }
+  
+
+
+
+
+
+  
+  @media (max-width: 500px) {
+    .titulo-release {
+      font-size: 35px;
+      border-bottom: solid 0px var(--color2);
+      animation:  rainbow 1s infinite;
+    }
+  
+    .info-tracklist {
+      position: relative;
+      width: 100%;
+      /*display: block;*/
+      font-size: 15px;
+      /* word-break: break-all; */
+      overflow-x: hidden;
+      margin-top: 20px;
+      transition: 0.5s ease;
+      opacity: 0.8;
+      text-align: center;
+    }
+    
+    .info-tracklist li {
+      font-size: 16px;
+  }
+    
+    .infocontainer {
+          display: block;
+      overflow: initial;
+      max-height: 100%;
+      margin-top: 0px;
+    }
+    
+    .release-visible {
+          height: auto;
+      position: relative;
+    }
+    
+    .release {
+          height: auto;
+      margin: 10px 0px!important;
+  }
+    
+    .releases {
+      margin-top: 60px;
+    }
+  
+    .discos li {
+      margin: auto;
+      text-align: center;
+      margin-bottom: 10px;
+      line-height: 1;
+      overflow: initial;
+      display: block;
+      font-weight: 600;
+    }
+   
+  
+    .descricao-release {
+      display: block;
+      font-weight: 400!important;
+    }
+    
+    iframe {
+     margin-top: 20px;
+      width: 50%;
+    }
+    
+    .infocontainer::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  .infocontainer::-webkit-scrollbar-thumb {
+    background-color: var(--color2);
+    outline: 0px solid slategrey;
+    height: -50px;
+  }
+
+
+  .embed-container {
+    bottom: 1rem;
+  }
+
+  .no-embed {
+    display: none;
+  }
+    
+  }
+  
+  
+  @media (min-height: 1000px) {
+    .info-tracklist {
+          top: 5vh;
+      height: 100vh;
+  }
+  
+  }

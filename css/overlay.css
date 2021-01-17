@@ -1,0 +1,164 @@
+.overlay {
+    position: absolute;
+    width: 95vw;
+    height: 100vh;
+    overflow: auto;
+    /* border: solid 1px #000; */
+    /*background-color: #fff;*/
+    opacity: 0;
+    transition: all 0.5s ease;
+    /*background-color: var(--color);*/
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+  }
+  
+  
+  .overlay-visible {
+    opacity: 1!important;
+    z-index: 4!important;
+    transition: all 0.5s ease;
+    display: flex !important;
+    overflow-y: auto;
+  }
+  
+  .trilhas-overlay, .outros-overlay {
+      width: 100vw;
+  }
+  
+  
+  .overlay-visible::-webkit-scrollbar {
+    width: 1px;
+  }
+  
+  .overlay-visible::-webkit-scrollbar-thumb {
+    background-color: var(--color2);
+    outline: 1px solid slategrey;
+    height: -50px;
+  }
+  
+  .close {
+    position: fixed;
+    left: 2%;
+    top: 5px;
+    font-weight: 900;
+    font-size: 20px;
+    cursor: pointer;
+    width: 2%;
+    display: none;
+    z-index: 99;
+  }
+  
+  .back {
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    font-weight: 900;
+    font-size: 36px;
+    padding: 10px;
+    cursor: pointer;
+    opacity: 0;
+    width: 5%;
+    z-index: 99;
+    transition: 0.2s ease;
+    z-index: 3000;
+  }
+  
+  .back:hover {
+      animation: rainbow 2s infinite;
+  }
+  
+  .overlay-titulo {
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline;
+    width: 100%;
+    text-align: center;
+    /*animation: rainbow 15s infinite;*/
+  }
+  
+  .center-overlay-titulo {
+      text-align: center;
+  }
+  
+  
+  
+  .bb {
+  border-bottom: solid 1px var(--color2) ;
+    display: none;
+  
+  }
+  
+  .overlay-titulo_new {
+          position: fixed;
+      /* bottom: 0px; */
+      transform: translate(60vw, 50vh);
+      transition: 0.8s ease; 	
+        background-color: var(--color);
+  }
+  
+  
+  
+  
+  .container {
+    margin:  30px;
+    width: 100%;
+  }
+  
+  
+  @media (max-width: 500px) {
+    .close {
+      display: block;
+    }
+  
+    .overlays {
+      display: none;
+      height: 100vh;
+    }
+  
+    .overlay {
+      height: 100vh;
+      top: -50px;
+      width: 100vw;
+      background-color: var(--color);
+    }
+  
+    .container {
+      margin: 60px 0px;
+    }
+  
+    .overlay-titulo {
+      font-size: 30px;
+     border-bottom: solid 2px var(--color2);
+      
+    }
+    
+    .back {
+    display: none;
+    }
+    
+    .bb {
+  border-bottom: solid 0px var(--color2);
+      display: block;
+  }
+    
+    .overlay-titulo {
+          position: fixed;
+      /* bottom: 0px; */
+      width: 100%;
+      padding: 5px;
+      transform: translate(0px, 0px);
+      transition: 0.5s ease; 	
+      top: 0px;
+      left: 0px;
+      background-color: var(--color);
+      border-bottom: solid 2px var(--color2);
+      display: block;
+      z-index: 99;
+  }
+    
+    
+    
+  }
+  

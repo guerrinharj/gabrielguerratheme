@@ -1,0 +1,110 @@
+.outros-list {
+    margin: 40px 0px;
+    width: 100%;
+  }
+  
+  .outro {
+    margin: -10px auto 50px auto;
+    cursor: pointer;
+    text-align: center;
+
+    /*opacity: 0;*/
+  }
+
+  .outro:first-child {
+    margin-top: 2rem;
+  }
+  
+  .outro:hover .titulo-outro {
+      animation: rainbow 0.5s infinite;
+  }
+  
+  .outro div {
+    margin: 10px auto;
+    text-align: center;
+    width: 50%;
+  }
+  
+  .titulo-outro {
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: 800;
+    transition: 0.8s ease;
+  }
+  
+  
+  
+  .remix-outro {
+    font-size: 1.3rem;
+    display: block;
+    font-weight: 500;
+  }
+  
+  .artista-outro {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+  
+  .descricao-outro {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1;
+    display: none;
+  }
+  
+  .outro-visible {
+    font-size: 1.1rem;
+    line-height: 1.3;
+    font-weight: 400;
+    display: block;
+  }
+  
+  .embed-outro {
+    margin: 15px auto;
+    display: block;
+  }
+  
+  @media (max-width: 500px) {
+    
+    .outro {
+      border-bottom: solid 1px #000;
+    }
+
+    .outro div {
+      width: 80%;
+    }
+    
+     .outro:first-child {
+      margin-top: 20px;
+  }
+    
+    .titulo-outro {
+      font-size: 20px;
+    }
+  
+    .remix-outro {
+      font-size: 16px;
+      display: block;
+    }
+  
+    .artista-outro {
+      font-size: 18px;
+    }
+  
+    .descricao-outro {
+      font-size: 15px;
+    }
+    
+    .embed-outro {
+          width: 50vw;
+      display: block;
+      margin: auto;
+      text-align: center;
+      }
+    
+    .titulo-outro:hover {
+      font-size: 20px;
+  }
+    
+  }
+  

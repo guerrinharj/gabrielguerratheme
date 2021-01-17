@@ -1,0 +1,113 @@
+.trilhas-list {
+    margin: 40px 0px;
+    width: 100%;
+  }
+  
+  .trilha {
+    margin: -10px auto 50px auto;
+    cursor: pointer;
+    text-align: center;
+    /*border-bottom: solid 1px var(--color2);*/
+    /*opacity: 0;*/
+  }
+
+  .trilha:first-child {
+    margin-top: 2rem;
+  }
+  
+  .trilha:hover .titulo-trilha {
+      animation: rainbow 0.5s infinite;
+  }
+  
+  
+  
+  .trilha div {
+    margin: 10px auto;
+    text-align: center;
+    width: 50%
+  }
+  
+  .titulo-trilha {
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: 800;
+    transition: 0.8s ease;
+  }
+  
+  
+  
+  .empresa-trilha {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+  
+  .descricao-trilha {
+    font-size: 1.2rem;
+    font-weight: 400;
+    opacity: 0;
+    transition: 0.3s 1s ease;
+    display: none
+  }
+  
+  .trilha-visible {
+    font-size: 1.1rem;
+    line-height: 1.3;
+    font-weight: 400;
+    transition: 0.3s 1s ease;
+    opacity: 1;
+    display: block;
+  }
+  
+  .embed-trilha {
+    margin: 15px auto;
+    display: block;
+  }
+
+  .embed-trilha iframe {
+    width: 100%;
+  }
+  
+  @media (max-width: 500px) {
+    
+    .trilha {
+      border-bottom: solid 1px #000;
+    }
+
+    .trilha div {
+      width: 95%;
+    }
+    
+     .trilha:first-child {
+      margin-top: 20px;
+  }
+    
+    .titulo-trilha {
+      font-size: 20px;
+      background-color: var(--color);
+    }
+  
+    .ano-trilha {
+      font-size: 16px;
+      display: none;
+    }
+  
+    .empresa-trilha {
+      font-size: 18px;
+    }
+  
+    .descricao-trilha {
+      font-size: 15px;
+    }
+    
+    .embed-trilha {
+          width: 90vw;
+      display: block;
+      margin: auto;
+      text-align: center;
+      }
+    
+    .titulo-trilha:hover {
+      font-size: 20px;
+  }
+    
+  }
