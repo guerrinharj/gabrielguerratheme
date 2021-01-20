@@ -355,6 +355,7 @@ border-color: rgb(255,0,0);
     .menu-item-selected {
       font-style: normal;
       transform: translateY(0px)!important;
+      animation: none
     }
   
     .menu-container .menu-item {
@@ -379,9 +380,7 @@ border-color: rgb(255,0,0);
       display: none;
     }
     
-    .menu-item-selected a {
-    animation: none;
-  }
+ 
     
     
   }
