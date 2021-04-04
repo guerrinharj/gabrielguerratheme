@@ -15,8 +15,6 @@ embedTag.forEach(tag => {
 
 
 
-    
-
     //Procuramos no document se algum elemento possui o atributo
     const embedQuery = document.querySelector(dataEmbed)
 

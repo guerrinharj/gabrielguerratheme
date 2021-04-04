@@ -217,6 +217,36 @@ get_header();
 				</div>
 			</div>
 
+			<div class="projetos-overlay overlay extradisciplinar">
+				<div class="container">
+					<div class="overlay-titulo artista">
+						<p>Extradisciplinar</p>
+					</div>
+
+					<div class="releases">
+						<ul class="discos">
+
+							<?php 			
+							$args = array(
+								'posts_per_page' => 40,
+								'category_name' => 'extradisciplinar',
+								'order' => 'ASC'
+							);
+
+							$loop = new WP_Query( $args ); 
+							
+							if ( $loop->have_posts() ) : 
+								while ( $loop->have_posts() ) : $loop->the_post(); 
+								get_template_part('template-parts/releases-content');
+								endwhile; 
+							endif; 
+							?>	
+						</ul>
+					</div>
+
+				</div>
+			</div>
+
 
 			<div class="projetos-overlay overlay finalzinho-chegando">
 				<div class="container">
