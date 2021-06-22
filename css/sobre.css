@@ -9,6 +9,10 @@
   .sobre-bio p {
     margin: 20px 0px;
   }
+
+  .sobre-overlay a {
+    text-decoration: underline!important;
+}
   
   
   @media (max-width: 500px) {

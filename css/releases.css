@@ -147,6 +147,7 @@
   bottom: 2rem;
   left: 0;
   z-index:3000;
+  display: none;
 }
 
 .embed-area {
@@ -154,13 +155,14 @@
   transform: translateX(100%);
   transition: 0.8s ease;
   width:100%;
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   justify-content:flex-end
 }
 
   
   .embed-visible {
+  display: none;
   transition: 0.8s ease;
   transform: translateX(0%)!important;
   }
