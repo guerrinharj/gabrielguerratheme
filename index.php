@@ -138,46 +138,10 @@ get_header();
 		<?php get_template_part('template-parts/sobre-content'); ?>
 
 		
-		
-		
 
 	</div>
 
 		<?php get_template_part('template-parts/gg-svg-content'); ?>
-
-		<div class="embed-container">
-		
-							<?php 			
-							$args = array(
-								'posts_per_page' => 200,
-								'order' => 'ASC'
-							);
-
-							$loop = new WP_Query( $args ); 
-							
-							if ( $loop->have_posts() ) : 
-								while ( $loop->have_posts() ) : $loop->the_post(); 
-								get_template_part('template-parts/embed-content');
-								endwhile; 
-							endif; 
-							?>	    
-	
-							<?php 			
-							$args = array(
-								'post_type' => 'outros',
-								'posts_per_page' => 200,
-								'order' => 'ASC'
-							);
-
-							$loop = new WP_Query( $args ); 
-							
-							if ( $loop->have_posts() ) : 
-								while ( $loop->have_posts() ) : $loop->the_post(); 
-								get_template_part('template-parts/embedoutro-content');
-								endwhile; 
-							endif; 
-							?>	    
-        </div>
 
 	</main><!-- #main -->
 

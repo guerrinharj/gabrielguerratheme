@@ -19,12 +19,13 @@
   
   .releases {
     overflow: auto;
-    height: 50vw;
+    height: 100vw;
     padding: 4vw 0;
   }
   
+  
   .releases img {
-    width: 70%!important;
+    width: 90%!important;
     margin: 20px 0px 40px;
     display: block;
     border: solid 1px #808080;
@@ -51,7 +52,8 @@
     display: flex;
     flex-wrap: wrap;
     margin: 10px auto;
-    width: 90%
+    width: 90%;
+    row-gap: 50px;
   }
   
   .discos img {

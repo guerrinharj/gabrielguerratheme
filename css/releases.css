@@ -141,49 +141,6 @@
     color: var(--color2)
   }
 
-.embed-container {
-  position: fixed;
-  width: 100vw;
-  height: 10vh;
-  bottom: 2rem;
-  left: 0;
-  z-index:3000;
-  display: none;
-}
-
-.embed-area {
-  position: absolute;
-  transform: translateX(100%);
-  transition: 0.8s ease;
-  width:100%;
-  display: none;
-  flex-wrap: wrap;
-  justify-content:flex-end
-}
-
-  
-  .embed-visible {
-  display: none;
-  transition: 0.8s ease;
-  transform: translateX(0%)!important;
-  }
-  
-  .embed-area iframe {
-    width: 100%!important
-  }
-
-  .no-embed {
-    margin-right: 1rem;
-    cursor: pointer;
-  }
-
-  .no-embed:hover {
-    transition: all 0.3s ease;
-    transform: translateX(-40%);
-  }
-  
-
-
 
 
 
@@ -266,13 +223,7 @@
   }
 
 
-  .embed-container {
-    bottom: 1rem;
-  }
 
-  .no-embed {
-    display: none;
-  }
     
   }
   
