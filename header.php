@@ -50,22 +50,6 @@ if ( $loop->have_posts() ) :
 endif; 
 ?>
 
-    <!-- <div class="projetos menu-item">
-     <a data-overlay=".menuprojects-overlay" class="projetos-name">Projetos</a>
-    </div>
-
-    <div class="trilhas menu-item byebyeprojects">
-     <a data-overlay=".trilhas-overlay">Trilhas</a>
-    </div>
-
-    <div class="outros menu-item byebyeprojects">
-     <a data-overlay=".outros-overlay">Outros</a>
-    </div>
-
-    <div class="sobre menu-item byebyeprojects">
-      <a data-overlay=".sobre-overlay">Sobre</a>
-    </div> -->
-
   </div>
 </div>
 

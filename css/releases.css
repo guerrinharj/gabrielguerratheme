@@ -82,6 +82,7 @@
     margin: 10px 0px;
     line-height: 1.5;
     cursor: initial;
+    width: 33%
   }
   
   .info-tracklist li {
@@ -240,6 +241,7 @@
       overflow: initial;
       display: block;
       font-weight: 600;
+      width: 100%;
     }
    
   

@@ -1,6 +1,6 @@
 .projetos-overlay {
-    width: 50vw;
-    left: 50%;
+    width: 100vw;
+    left: 0%
   }
   
   .artista {
@@ -46,7 +46,6 @@
   
   .discos {
     display: flex;
-    flex-direction: column-reverse;
     flex-wrap: wrap;
     margin: 10px auto;
   }
