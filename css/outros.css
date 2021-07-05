@@ -1,6 +1,8 @@
 .outros-list {
-    margin: 40px 0px;
+    padding: 8vw 0;
     width: 100%;
+    overflow: auto;
+    height: 50vw;
   }
   
   .outro {
@@ -65,6 +67,11 @@
   }
   
   @media (max-width: 500px) {
+
+    .outros-list {
+      height: 100%;
+      padding: 40px 0;
+    }
     
     .outro {
       border-bottom: solid 1px #000;

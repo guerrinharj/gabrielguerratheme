@@ -18,14 +18,17 @@
   }
   
   .releases {
-    margin-top: 20px;
+    overflow: auto;
+    height: 50vw;
+    padding: 4vw 0;
   }
   
   .releases img {
     width: 70%!important;
     margin: 20px 0px 40px;
     display: block;
-    padding:  0.5rem;
+    border: solid 1px #ccc;
+    border-radius: 20px;
   }
   
   .release-cover {
@@ -48,6 +51,7 @@
     display: flex;
     flex-wrap: wrap;
     margin: 10px auto;
+    width: 90%
   }
   
   .discos img {
@@ -87,6 +91,11 @@
     .projetos-overlay {
       width: 100vw;
       left: 0%;
+    }
+
+    .releases {
+      height: 100%;
+      padding: 0;
     }
   
     .releases img {

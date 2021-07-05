@@ -1,6 +1,8 @@
 .trilhas-list {
-    margin: 40px 0px;
+    padding: 8vw 0;
     width: 100%;
+    overflow: auto;
+    height: 50vh;
   }
   
   .trilha {
@@ -68,6 +70,11 @@
   }
   
   @media (max-width: 500px) {
+
+    .trilhas-list {
+      height: 100%;
+      padding: 40px 0
+    }
     
     .trilha {
       border-bottom: solid 1px #000;
