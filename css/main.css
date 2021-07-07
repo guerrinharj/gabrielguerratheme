@@ -232,22 +232,22 @@ border-color: rgb(255,0,0);
   }
   
   .menu-container .menu-item:hover {
-    animation: rainbow 0.2s infinite;
+    animation: rainbow 2s infinite;
     transform: translateY(15px)
   }
 
   .menu-container .menu-item:hover a {
-    animation: rainbow 0.2s infinite;
+    animation: rainbow 2s infinite;
   }
   
   .menu-item-selected {
     /* font-style: italic; */
     transform: translateY(15px)!important;
-    animation: rainbow 0.2s infinite;
+    animation: rainbow 2s infinite;
   }
   
   .menu-item-selected a {
-    animation: rainbow 0.2s infinite!important;
+    animation: rainbow 2s infinite!important;
   }
   
   

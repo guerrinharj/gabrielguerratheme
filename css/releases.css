@@ -142,7 +142,9 @@
   }
 
 
-
+.is_round a img {
+  border-radius: 500px!important
+}
 
   
   @media (max-width: 500px) {
